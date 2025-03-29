@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import ModeCommentIcon from '@mui/icons-material/ModeComment';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; // Import the down arrow icon
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'; 
 import HomeIcon from '@mui/icons-material/Home';
 import MessageIcon from '@mui/icons-material/Message';
-import CampaignIcon from '@mui/icons-material/Campaign'; // Import the speaker icon
-import WhatsAppIcon from '@mui/icons-material/WhatsApp'; // Import WhatsApp icon
-import SendIcon from '@mui/icons-material/Send'; // Import Send icon
+import CampaignIcon from '@mui/icons-material/Campaign'; 
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'; 
+import SendIcon from '@mui/icons-material/Send'; 
 import { Button } from '@mui/material';
 import './bot.css';
 
@@ -13,7 +13,7 @@ const Bot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const toggleChat = () => {
-    setIsChatOpen(!isChatOpen); // Toggle the chat window visibility
+    setIsChatOpen(!isChatOpen); 
   };
 
   return (
@@ -26,19 +26,17 @@ const Bot = () => {
         )}
       </div>
 
-      {/* Chat Popup */}
       {isChatOpen && (
         <div className="chat-popup">
           <div className="chat-header">
    
-<h2 className='chat-title'>Hexanode</h2>
-<div className="chat-header-text"></div>
+          <h2 className='chat-title'>Hexanode</h2>
+        <div className="chat-header-text">
 
     <h3>Good Day!</h3>
     <p>How can we help?</p>
   </div>
 
-  {/* Message Box */}
   <div className="message-box">
     <div className="message-item">
       <span>Send us a message</span>
@@ -46,7 +44,6 @@ const Bot = () => {
     </div>
   </div>
 
-  {/* Cards Section */}
   <div className="cards-container">
     <div className="card">
       <h3>Featured Article</h3>
@@ -77,7 +74,7 @@ const Bot = () => {
   <h3>Search the Help Center</h3>
   <p>
     Unified Endpoint Management Help | Hexnode  
-    Dive through our knowledge base to explore Hexnode UEM's features in detail.
+    Dive through our knowledge base to explore Hexnode UEMs features in detail.
   </p>
 </div>
 
@@ -89,8 +86,9 @@ const Bot = () => {
   </p>
   <Button variant="contained">Ask Away!</Button>
 </div>
+</div>
+</div>
 
-{/* Chat Footer */}
 <div className="chat-footer">
   <div className="footer-item">
     <HomeIcon style={{ fontSize: '24px', color: '#007bff' }} />
@@ -106,7 +104,6 @@ const Bot = () => {
     <CampaignIcon style={{ fontSize: '24px', color: '#007bff' }} />
     <span>News</span>
   </div>
-</div>
 </div>
 </div>
 )}

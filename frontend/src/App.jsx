@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import Header from './Header/header'
-import Content from './Content/content'
-import Bot from './Bot/bot'
-import './App.css'
+import React from 'react';
+import Header from './Header/header';
+import Content from './Content/content';
+import CompatibleDevices from './CompatibleDevice/CompatibleDevice';
+import Footer from './Footer/footer';
+import './App.css';
+import Bot from './Bot/bot';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <div style={{display:'flex', flexDirection:'color'}}>
-      <Header/>
-      <Content/>
-      <Bot/>
+    <div className="app-container">
+      <Header />
+      <div className="main-content">
+        <Content />
+            <CompatibleDevices />
+      </div>
+      <Footer />
+      <div>
+        <Bot/>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

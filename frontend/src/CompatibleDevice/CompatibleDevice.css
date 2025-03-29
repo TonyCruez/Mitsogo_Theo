@@ -1,0 +1,92 @@
+/* Compatible devices section styles */
+.compatible-devices-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+  }
+  
+  .section-subheading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .platforms-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .platform-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .platform-icon {
+    font-size: 60px !important;
+    margin-bottom: 20px;
+  }
+  
+  .platform-icon.android {
+    color: #3ddc84;
+  }
+  
+  .platform-icon.apple {
+    color: #a2aaad;
+  }
+  
+  .platform-icon.windows {
+    color: #0078d7;
+  }
+  
+  .platform-icon.other {
+    color: #ff9800;
+  }
+  
+  .platform-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #212529;
+  }
+  
+  .platform-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .platform-card li {
+    margin-bottom: 8px;
+    color: #6c757d;
+  }
+  
+  @media (max-width: 992px) {
+    .platforms-container {
+      gap: 20px;
+    }
+    
+    .platform-card {
+      min-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .platform-card {
+      min-width: 100%;
+    }
+  }
